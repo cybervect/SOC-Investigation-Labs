@@ -4,7 +4,7 @@
 This repository contains my practical write-ups, incident response simulations, and home lab configurations. It demonstrates my methodology for triaging network alerts, analyzing packet captures (PCAPs), and utilizing SIEM tools.
 
 ## Current Projects & Investigations
-* [Investigating Suspicious HTTP Traffic (TryHackMe)](Link-to-your-file-here)
+* [Suspicious-SSH-Loging (TryHackMe)](Suspicious-SSG-Login.md)
 * *(Add your next investigation here)*
 * *(Add your next investigation here)*
 
