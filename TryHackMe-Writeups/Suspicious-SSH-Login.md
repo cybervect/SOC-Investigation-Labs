@@ -1,9 +1,9 @@
 # Incident Triage: Suspicious SSH Login
 
-**Scenario:** The SOC dashboard flagged a critical alert for a successful SSH authentication from an unknown, suspicious IP address[cite: 5]. 
+**Scenario:** The SOC dashboard flagged a critical alert for a successful SSH authentication from an unknown, suspicious IP address. 
 
 ## Objective
-To investigate the critical alert, analyze the reputation of the source IP address, and follow proper escalation procedures for a confirmed compromise[cite: 5, 6, 7].
+To investigate the critical alert, analyze the reputation of the source IP address, and follow proper escalation procedures for a confirmed compromise.
 
 ## Investigation Steps
 
@@ -12,13 +12,13 @@ To investigate the critical alert, analyze the reputation of the source IP addre
 * The alert message detailed a "Successful SSH login from the suspicious IP address 221.181.185.159".
 
 **2. Threat Intelligence Validation (IP Hunter)**
-* Queried the source IP (`221.181.185.159`) using the internal IP Hunter tool to check its reputation against databases like AbuseIPDB and Cisco Talos[cite: 6].
-* The database confirmed the IP is malicious and has been involved in 4 known cyber attacks[cite: 6].
-* Identified the ISP as China Mobile Communications Corporation[cite: 6].
+* Queried the source IP (`221.181.185.159`) using the internal IP Hunter tool to check its reputation against databases like AbuseIPDB and Cisco Talos.
+* The database confirmed the IP is malicious and has been involved in 4 known cyber attacks.
+* Identified the ISP as China Mobile Communications Corporation.
 * Noted the associated threat categories: Port Scan, C2 Server, and PlugX (a known remote access trojan).
 
 **3. Escalation & Remediation (Team Chat & Firewall)**
-* Communicated the findings via Team Chat to Will Griffin, Senior Security Analyst, explicitly noting that this was a *successful* authentication attempt rather than a failed brute-force, requiring immediate senior intervention[cite: 7].
+* Communicated the findings via Team Chat to Will Griffin, Senior Security Analyst, explicitly noting that this was a *successful* authentication attempt rather than a failed brute-force, requiring immediate senior intervention.
 * The Senior Analyst acknowledged the evidence and took the lead to initiate further incident response.
 
 ## Evidence
